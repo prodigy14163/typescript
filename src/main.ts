@@ -220,5 +220,34 @@ const chucky = new HorrorMovies("chucky", 200, false ,director1, true);
 console.log(chucky);
 console.log(chucky.getinfo());
 
+namespace common {
+    export interface user {
+    id: number;
+    username: string;
+}
+    export interface error{
+        id: number;
+        iscritical: boolean;
+        message: string;
+    }
+
+}
+
+interface user {
+    id: number;
+    username: string;
+}
+
+const user1: common.user = {
+    id: 1,
+    username: "gerardo"
+}
+
+
+
+
+
+
+
 
 

@@ -105,4 +105,8 @@ console.log(susto.getinfo());
 const chucky = new HorrorMovies("chucky", 200, false, director1, true);
 console.log(chucky);
 console.log(chucky.getinfo());
+const user1 = {
+    id: 1,
+    username: "gerardo"
+};
 //# sourceMappingURL=main.js.map
