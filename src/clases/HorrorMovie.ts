@@ -1,5 +1,5 @@
-import type { Director } from "../interfaces/Director.js";
-import { Movies } from "./Movies.js";
+import type { Director } from "../interfaces/Director";
+import { Movies } from "./Movies";
 
 export class HorrorMovies extends Movies {
     constructor(

@@ -1,5 +1,5 @@
-import type { Director } from "../interfaces/Director.js";
-import type { IVideo } from "../interfaces/ivideo.js";
+import type { Director } from "../interfaces/Director";
+import type { IVideo } from "../interfaces/ivideo";
 export declare class Movies implements IVideo<string> {
     title: string;
     duration: number;

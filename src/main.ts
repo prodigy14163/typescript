@@ -1,6 +1,6 @@
-import { HorrorMovies } from "./clases/HorrorMovie.js";
-import { Movies } from "./clases/Movies.js";
-import type { Director } from "./interfaces/Director.js";
+import { HorrorMovies } from "./clases/HorrorMovie";
+import { Movies } from "./clases/Movies";
+import type { Director } from "./interfaces/Director";
 
 console.log("hola desde typescript")
 console.log("prueba ordenando proyecto")
