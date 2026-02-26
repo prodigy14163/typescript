@@ -1,0 +1,11 @@
+
+
+//comando para prender server
+
+
+npm run serve
+
+
+
+
+npm i jest babel-jest @babel/core @babel/preset-env @babel/preset-typescript @types/jest -d

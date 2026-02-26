@@ -244,10 +244,57 @@ const user1: common.user = {
 }
 
 
+console.log("prueba server");
+
+const movie3 = new Movies("The Dark Knight", 152, true, director1);
+
+const movie4 = new Movies("Dunkirk", 106, true, director1);
+
+const movie5 = new HorrorMovies("Tenet", 150, true, director1,true);
 
 
+const movieArr: Movies[] = [movie1, movie2, movie3, movie4, movie5];
 
 
+const btn = document.querySelector(".btn") as HTMLButtonElement;
+const moviesList = document.querySelector(".movies-list") as HTMLUListElement;
 
+const addMovie = (movie: Movies) => {
+    const li = document.createElement("li");
+    const h3 = document.createElement("h3");
+    const h4 = document.createElement("h4");
+    const p = document.createElement("p");
+    h3.classList.add("Title");
+    h3.textContent = movie.title;
+
+    h4.classList.add("Duration");
+    h4.textContent = `${movie.duration} min`;
+
+
+    p.classList.add("Director");
+    p.textContent = `Director: ${movie.director.name}`;
+    
+    li.classList.add("Movie-item");
+
+    li.appendChild(h3);
+    li.appendChild(h4);
+    li.appendChild(p);
+    moviesList.append(li);
+}
+
+
+let moviesshown = false;
+btn.addEventListener("click", () => {
+    if (moviesshown) {
+        moviesList.innerHTML = "";
+        btn.textContent = "Show Movies";
+
+    }else{
+            movieArr.forEach(movie => addMovie(movie));
+            btn.textContent = "Hide Movies";
+
+    }
+    moviesshown = !moviesshown;
+})
 
 

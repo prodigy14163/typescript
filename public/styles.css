@@ -1,0 +1,12 @@
+.movie-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    .movie-card{
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #0c0c0c;
+        background-color: blue;
+        color: white;
+    }
+}
